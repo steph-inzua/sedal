@@ -1,0 +1,108 @@
+@require "base/utiles"
+@require "nib"
+@require "animations"
+
+#interior
+	min-height 638px
+	height 100vh
+	display flex
+	justify-content center
+	align-items center
+	+hasta( escritorio)
+		min-height 1050px
+	.slider-txt
+		max-width 1020px
+		background rgba(0,0,0,.5)
+		border 2px solid #636266
+		padding 30px 10px
+		border-radius 10px
+		display flex
+		justify-content space-between
+		
+		+hasta( escritorio )
+			padding 25px 10px
+			display inherit
+			max-width 100%
+			box-sizing border-box
+			
+			
+		.title1
+			font-size (30 / 16)rem
+			margin-top 0
+	.boton
+		margin-top 10px
+		+hasta( escritorio)
+			text-align center
+			margin-bottom -60px
+	form
+		+hasta( escritorio )
+			width 90%
+			margin 0 auto
+	.selecc
+		+hasta( escritorio )
+			margin 0 13px 20px 13px
+		span
+			+hasta( escritorio )
+				margin-bottom 6px
+	.formulario
+		label
+			font-weight 100
+			display block
+			margin-bottom 11px
+		span
+			min-width 90px
+			display inline-block
+			+hasta( escritorio )
+				display block
+				
+		.campo
+			display inline-block
+			border 0
+			padding 4px 12px
+			background blanco
+			border-radius 10px
+			width 350px
+			box-sizing border-box
+			+hasta( escritorio )
+				width 100%
+		.textarea
+			position relative
+			width 450px
+			
+			
+			+hasta( escritorio )
+				width 100%
+			textarea
+				background blanco
+				border-radius 10px
+				width 100%
+				box-sizing border-box
+
+			.hove
+				position absolute
+				top 0
+				z-index 9
+				color #a4a4a4
+				font-size (18.22 / 16)rem
+				width 100%
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+				height 100%
+				span
+					font-size (14 / 16)rem
+					display block
+					font-weight 100
+					margin-top 8px
+			&:hover .hove
+				display none		
+					
+	.col1
+		width 50%
+		padding 0 30px
+		box-sizing border-box
+		+hasta( escritorio )
+			width 100%
+			display inherit
+			padding 0 7px

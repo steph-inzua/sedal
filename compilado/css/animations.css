@@ -1,0 +1,82 @@
+
+/* line 297 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+
+/* line 1 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+@-moz-keyframes scrollhover {
+
+/* line 2 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  0% {
+    background-position: 0 0px;
+  }
+
+/* line 4 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  50% {
+    background-position: 0 5px;
+  }
+
+/* line 6 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  100% {
+    background-position: 0 0px;
+  }
+}
+
+/* line 1 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+@-webkit-keyframes scrollhover {
+
+/* line 2 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  0% {
+    background-position: 0 0px;
+  }
+
+/* line 4 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  50% {
+    background-position: 0 5px;
+  }
+
+/* line 6 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  100% {
+    background-position: 0 0px;
+  }
+}
+
+/* line 1 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+@-o-keyframes scrollhover {
+
+/* line 2 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  0% {
+    background-position: 0 0px;
+  }
+
+/* line 4 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  50% {
+    background-position: 0 5px;
+  }
+
+/* line 6 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  100% {
+    background-position: 0 0px;
+  }
+}
+
+/* line 1 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+@keyframes scrollhover {
+
+/* line 2 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  0% {
+    background-position: 0 0px;
+  }
+
+/* line 4 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  50% {
+    background-position: 0 5px;
+  }
+
+/* line 6 : D:\Atomikal\Sedal-serendipity\Software\sedal-seren.git\codigo\stylus\animations.styl */
+  100% {
+    background-position: 0 0px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFuaW1hdGlvbnMuc3R5bCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBVztBQUNWO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOzs7QUFOUztBQUNWO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOzs7QUFOUztBQUNWO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOzs7QUFOUztBQUNWO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCOztBQUNEO0lBQ0MscUJBQW9CLE1BQXBCIiwiZmlsZSI6ImFuaW1hdGlvbnMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGtleWZyYW1lcyBzY3JvbGxob3ZlclxyXG5cdDAlXHJcblx0XHRiYWNrZ3JvdW5kLXBvc2l0aW9uIDAgMHB4XHJcblx0NTAlXHJcblx0XHRiYWNrZ3JvdW5kLXBvc2l0aW9uIDAgNXB4XHJcblx0MTAwJVxyXG5cdFx0YmFja2dyb3VuZC1wb3NpdGlvbiAwIDBweFxyXG4iXX0= */

@@ -1,0 +1,345 @@
+@require "base/utiles"
+@require "nib"
+
+
+global-reset()
+reset-html5()
+
+html *
+	//background-color rgba( 0, 0, 0, 0.1 )
+	//outline 1px solid rgba( 255, 255, 0, 0.1 )
+
+	&:hover
+		//outline 1px solid rgba( 255, 0, 255, 0.5 )
+
+fuente( "Fortd", "fortd" )
+fuente( "Gotham-Bold", "Gotham-Bold" )
+
+body
+	min-height 100vh
+	margin 0
+	padding 0
+	font-family "Gotham-Bold"
+	color #fff
+	background url('../img/bg-sedal.jpg') no-repeat center center
+	background-size cover
+
+	p
+		font-size 1.05rem
+		color gris
+		line-height normal
+		+desde( escritorio )
+			font-size (19 / 16)rem
+
+
+img
+	max-width: 100%;
+
+.contenedor
+	max-width: 1240px
+	margin: 0 auto;
+	display: block;
+	box-sizing border-box
+	padding 0 1.5rem
+	+desde( escritorio )
+		padding 0
+		
+ 
+
+// titles
+.title1
+	font-size (21.83 / 16)rem
+	color blanco
+	margin 20px 0
+	font-family "Fortd"
+	font-weight 100
+	+desde( escritorio )
+		font-size (43.58 / 16)rem
+.subtitle1
+	color rosa
+	font-size (13.4 / 16)rem
+	line-height normal
+	+desde( escritorio )
+		font-size (20 / 16)rem
+		line-height 1.5rem
+	
+.t-blanco
+	&:before
+		content ''
+		display block
+		background url('../img/line-title.png') repeat-x
+		height 31px
+		width 100%
+		margin-bottom 20px
+		+hasta( escritorio )
+			background url('../img/line-title-resp.png') repeat-x
+			height 15px
+			
+	&:after
+		content ''
+		display block
+		background url('../img/line-title.png') repeat-x
+		height 31px
+		width 100%
+		margin-top 20px
+		+hasta( escritorio )
+			background url('../img/line-title-resp.png') repeat-x
+			height 15px
+
+.t-rosa
+	&:before
+		content ''
+		display block
+		background url('../img/line-title-rosa.png') repeat-x
+		height 23px
+		width 100%
+		margin-bottom 8px
+		+hasta( escritorio )
+			background url('../img/line-title-rosa-resp.png') repeat-x
+			height 15px
+			
+	&:after
+		content ''
+		display block
+		background url('../img/line-title-rosa.png') repeat-x
+		height 23px
+		width 100%
+		margin-top 8px
+		+hasta( escritorio )
+			background url('../img/line-title-rosa-resp.png') repeat-x
+			height 15px	
+
+
+
+//encabezados
+#encabezado
+	position absolute
+	width 100%
+	z-index 1
+	padding-top 27px
+	
+	.logo
+		display block
+		max-width 166px
+		margin 0 auto
+		+desde( escritorio )
+			max-width none
+			margin 0
+			
+
+ 
+//botones
+.btn1
+	background rosa
+	color white
+	text-decoration none
+	border-radius 10px
+	padding 15px 15px 17px 15px
+	font-size (19.06 / 16)rem
+	transition all .4s
+	position relative
+	overflow hidden
+	display inline-block
+	min-width 140px
+	text-align center
+	+hasta( escritorio)
+		font-size (20.86 / 16)rem
+	&:before
+		content ''
+		width 0
+		height 100%
+		background rosa1
+		position absolute
+		top 0
+		left 0
+		transition all .4s
+	&:hover:before	
+		width 100%
+	span
+		position relative
+		z-index 2
+		margin-bottom 0
+
+.btn2
+	background red1
+	color white
+	text-decoration none
+	border-radius 20px
+	padding 5px 20px 8px 35px
+	letter-spacing 0.1rem
+	position relative
+	font-size (17.42 / 16)rem
+	font-weight bold
+	transition all .4s
+	
+	&:before
+		content ''
+		absolute top -3px left -10px
+		display block
+		width 40px
+		height 40px
+		background url('../img/icons/btn-arrow1.png') no-repeat
+	&:hover
+		background red4
+		padding 5px 30px 8px 45px
+	 
+#pie
+	+desde( escritorio )
+			display inherit
+			font-size (13.76 / 16 )rem
+	font-family "Arial"
+	background red1
+	color white
+	padding 19px 0
+	box-sizing border-box
+	position relative
+	font-size (13 / 16)rem
+	font-weight bolder
+	display flex
+	align-items flex-end
+	justify-content space-between
+		
+	
+	
+	 
+	.wong1
+		
+		display inline-block
+		
+		margin-left 20px
+		+desde( escritorio )
+			display none
+			
+	.contenedor
+		text-align left
+		display block
+		padding 0 25px
+		+desde( escritorio )
+			text-align center
+			display flex
+			justify-content space-between
+			align-items center
+		p
+			color white
+			font-size (13.76 / 16)rem
+		
+		.copy
+			letter-spacing auto
+			width 100%
+			+desde( escritorio )
+				width auto
+				letter-spacing 0.06em
+				
+		.atencion
+			p
+				float left
+				margin 5px 5px 0 0
+		.social
+			float right
+			display none
+			+desde( escritorio )
+				display inherit
+			a
+				text-decoration none
+				opacity 1
+				
+				transition all .4s
+				&:hover
+					opacity 0.5
+		.social-resp
+			display inherit
+			text-align center
+			margin-bottom 5px
+			+desde( escritorio )
+				display none
+			
+			a
+				text-decoration none
+// MENU
+.control
+	border-top 7px double blanco
+	border-bottom 7px double blanco
+	height 3px
+	width 19px
+	display block
+.menu
+	li
+		display inline-block
+		position relative
+		z-index 100
+		border-right #fff 2px solid
+		&:last-child
+			border-right none
+		a 
+			font-weight 600
+			text-decoration none
+			padding 0 25px
+			display block
+			color #fff
+			transition all 0.2s ease-in-out 0s
+			letter-spacing 0.07rem
+			line-height 0.9rem
+			/*.menu-a1
+				background url('../img/icons/ico-menu-a1.png') no-repeat 10px center*/
+				
+
+		/*&:hover
+		&:hover>a 
+			color #fff
+			background #FC6D58*/
+		&:hover
+			ul
+				visibility visible
+				opacity 1
+				transform translate(0, 0)
+	ul 
+		visibility hidden
+		opacity 0
+		margin 5px 0 0 0
+		padding 10px 0 15px 0
+		position absolute
+		left 0px
+		background rgba(255,255,255,.92)
+		border-radius 0 0 5px 5px
+		z-index 99
+		transform translate(0, 20px)
+		transition all 0.2s ease-out
+		li
+			display block
+			float none
+			background none
+			margin 0
+			padding 0
+			border none
+			
+			a
+				font-weight normal
+				display block
+				color #797979
+				padding 0
+				&:hover
+					background #ed1c24
+					color #fff
+				span
+					margin 0 16px
+					padding 13px 45px
+					border-bottom 1px solid #e60000
+					display block
+					font-weight bold
+			&:last-child
+				span
+					border-bottom none
+					
+					
+					
+			ul
+				left 169px
+				top 0px
+				visibility hidden
+				opacity 0
+				transform translate(20px, 20px)
+				transition all 0.2s ease-out
+				&:hover
+					visibility visible
+					opacity 1
+					transform translate(0, 0)

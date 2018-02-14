@@ -1,0 +1,22 @@
+{% extends "estructura.twig" %}
+
+{% set seccion = "index" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+
+{% block cuerpo %}
+	<section id="portada">
+		<article class="slider-txt">
+			<h2 class="title1 t-blanco">Detrás de un gran cambio hay una gran historia</h2>
+			<h3 class="subtitle1">Cuéntanos esa historia que cambió tu vida y participa por los 05 Kits de maquillaje que Sedal tiene para ti.</h3>
+			<div class="boton" align="center"><a href="registro.html" class="btn1"><span>PARTICIPA AQUÍ</span></a></div>
+		</article>
+	</section>
+{% endblock %}
+
+{% block js %}
+	<script src="js/{{ seccion }}.js"></script>
+{% endblock %}

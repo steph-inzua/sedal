@@ -1,0 +1,48 @@
+{% extends "estructura.twig" %}
+
+{% set seccion = "interior" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+
+{% block cuerpo %}
+	<section id="interior">
+		<form action="agradecimiento.html">
+			<article class="slider-txt">
+				<div class="col1">
+				<h2 class="title1 t-rosa">Datos</h2>
+					
+					<div class="formulario selecc">
+						<label><span>Nombre:</span><input type="text" name="" class="campo"></label> 
+						<label><span>Apellido:</span><input type="text" name="" class="campo"></label> 
+						<label><span>Teléfono:</span><input type="text" name="" class="campo"></label> 
+						<label><span>Ciudad:</span><input type="text" name="" class="campo"></label> 
+						<label><span>DNI:</span><input type="text" name="" class="campo"></label> 
+						<label><span>Correo:</span><input type="text" name="" class="campo"></label> 
+					</div>
+					
+				</div>
+				<div class="col1">
+					<div class="formulario">
+						<div  class="textarea">
+							<textarea rows="17">
+								
+
+							</textarea>
+							<div class="hove" >
+								ESCRIBE TU HISTORIA AQUÍ <span>Máximo 140 caracteres</span>
+							</div>
+						</div>
+
+						<div class="boton" align="right"><a href="agradecimiento.html" class="btn1"><span>ENVIAR</span></a></div>
+				</div>
+			</article>
+		</form>
+	</section>
+{% endblock %}
+
+{% block js %}
+	<script src="js/{{ seccion }}.js"></script>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	{% for etiqueta in metaetiquetas %}
+		<meta{% for clave, valor in etiqueta %} {{ clave }}="{{ valor }}" {% endfor %}/>
+	{% endfor %}
+	<title>{{ titulo }}</title>
+	<link rel="stylesheet" href="css/general.css">
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="js/picturefill.min.js"></script>
+	{% block css %}{% endblock %}
+</head>
+<body>
+	{% block seguimiento %}{% endblock %}
+
+	{% block pagina %}{% endblock %}
+	<script type="text/javascript" src="js/general.js" async defer></script> 
+	
+	{% block js %}{% endblock %}
+</body>
+</html>

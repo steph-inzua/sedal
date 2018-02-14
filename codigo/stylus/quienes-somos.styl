@@ -1,0 +1,30 @@
+@require "base/utiles"
+@require "nib"
+
+#interior
+	.colm-01
+		display flex
+		justify-content space-between
+		align-items center
+		+hasta( escritorio )
+			flex-direction column-reverse
+			
+	.lista1 
+		padding 20px 0
+		li
+			background url('../img/icons/li-1.png') no-repeat
+			padding 0 0 0 35px
+			font-size 1.05rem
+			margin-bottom 23px
+			+desde( escritorio )
+				font-size (19 / 16)rem
+	
+	.compartir
+		 text-align right
+		 margin-top 1rem
+		 
+		p
+			font-size (12.54 / 16)rem
+			img
+				vertical-align middle
+				

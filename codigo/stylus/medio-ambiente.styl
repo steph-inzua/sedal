@@ -1,0 +1,152 @@
+@require "base/utiles"
+@require "nib"
+
+#interior
+	.colm-01
+		display flex
+		justify-content space-between
+		align-items center
+		+hasta( escritorio )
+			flex-direction column-reverse
+	.lista1 
+		padding 20px 0
+		li
+			background url('../img/icons/li-1.png') no-repeat
+			padding 0 0 0 35px
+			font-size (20 / 16)rem
+			margin-bottom 23px
+	
+	.compartir
+		 text-align right
+		 margin-top 1rem
+		 
+		p
+			font-size (12.54 / 16)rem
+			+hasta( escritorio )
+				margin-bottom 0
+			img
+				vertical-align middle
+	.new
+		border 2px solid red1 
+		border-radius 7px
+		padding 0.1rem
+		margin 0
+		display flex
+		justify-content flex-start
+		align-items flex-start
+		flex-wrap wrap
+		margin-right -10px
+		margin-left -10px
+		
+		+desde( escritorio )
+			margin 10px 5px
+			padding 0.3rem
+			min-height 90px
+		+hasta( escritorio )
+				margin 0 20px
+		.new-t
+			width 55%
+			padding 10px
+			box-sizing border-box
+			+desde( escritorio )
+				padding 5px 5px 5px 10px 
+				width 52%
+			h2
+				font-size (16.91 / 16)rem
+				margin-bottom 5px
+				+desde( escritorio )
+					font-size (17 / 16)rem
+					margin-bottom 5px
+				a
+					text-decoration none
+					color gris
+					font-weight bold
+					
+			.more1
+				background url('../img/icons/more1.png') no-repeat right center
+				color red1
+				padding 0 15px 0 0  
+				text-decoration none
+				font-weight bold
+				font-size 1rem
+				transition all .4s
+				&:hover
+					background-position right 3px center
+					color red4
+				
+		.imgx
+			max-width 40%	
+			+desde( escritorio )
+				max-width 45%
+	.desk-img
+		+hasta( escritorio )
+			display none
+	.imagen1
+		display none
+		+hasta( escritorio )
+			display inherit
+	.marquesina
+		
+		.slick-prev,
+		.slick-next
+			font-size 0
+			line-height 0
+			position absolute
+			top 50%
+			display block
+			width 2rem
+			height 60px
+			padding 0
+			transform translate(0, -50%)
+			cursor pointer
+			color transparent
+			border none
+			outline none
+			background-color transparent
+			background-position center
+			background-repeat no-repeat
+			z-index 1
+
+		.slick-prev
+			left -2rem
+			background-image url( "../img/chevron-izquierda.png" )
+			+hasta( escritorio )
+				left -1rem
+
+		.slick-next
+			right -2rem
+			background-image url( "../img/chevron-derecha.png" )
+			+hasta( escritorio )
+				right -1rem
+
+		.item
+			display block
+			box-sizing border-box
+			
+			.imagen
+				display block
+				position relative
+
+				&::before
+					content " "
+					display block
+					padding-top 70%
+					+desde( escritorio )
+						padding-top 60%
+
+				img
+					absolute top left right bottom
+					display block
+					margin auto
+
+
+			.contenido
+				.titulo
+					font-size ( 21.6 / 16 )rem
+
+				.texto
+					font-family "Fontin"
+					font-size 1rem
+					color plomo
+				.titulo-1
+					font-size ( 26 / 16)rem

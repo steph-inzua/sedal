@@ -1,0 +1,93 @@
+@require "base/utiles"
+@require "nib"
+
+#interior
+	.colm-01
+		max-width 880px
+		margin 0 auto
+		+hasta( escritorio )
+			width 100%
+		.box-ht
+			box-sizing border-box
+	form
+		margin 20px 0 30px 0
+		input::-webkit-input-placeholder
+			color #f8f8f8
+			+hasta( escritorio )
+				color gris
+		input::-moz-input-placeholder
+			color #f8f8f8
+			+hasta( escritorio )
+				color gris
+		label
+			+hasta( escritorio )
+				display none
+		br
+			display none
+		+hasta( escritorio)
+			text-align center
+				
+	.campo
+		background #f8f8f8
+		padding 8px 10px
+		border  1px solid #bbbbbb
+		border-radius 5px
+		width 269px
+		margin-left 20px
+		margin-right 20px
+		margin-bottom 10px
+		+hasta( escritorio)
+			display block
+			margin 0 0 10px 0
+			width 100%
+			box-sizing border-box
+		
+		
+	.fono
+		width 200px
+		+hasta( escritorio)
+			width 100%
+			box-sizing border-box
+	.email
+		width 353px
+		+hasta( escritorio)
+			width 100%
+			box-sizing border-box
+	.textarea
+		background #f8f8f8
+		padding 8px 10px
+		border  1px solid #bbbbbb
+		border-radius 5px
+		width 765px
+		margin-top 10px
+		margin-bottom 10px
+		+hasta( escritorio )
+			width 100%
+			box-sizing border-box
+			margin-top 0
+	.enviar
+		display inline-block
+		
+ 
+			
+	.datos
+		p
+			font-size (14.77 / 16)rem
+			line-height 30px
+			+hasta( escritorio )
+				line-height 20px
+				margin-bottom 5px
+		.phone
+			background url('../img/icons/phone.png') no-repeat
+			padding 0 0 0 25px
+		.dir
+			background url('../img/icons/address.png') no-repeat
+			padding 0 0 0 25px
+			display inline-block
+			margin-right 40px
+		.mail
+			background url('../img/icons/mail.png') no-repeat
+			padding 0 0 0 30px
+			display inline-block
+			+hasta( escritorio )
+				display block

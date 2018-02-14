@@ -1,0 +1,28 @@
+{% extends "estructura.twig" %}
+
+{% set seccion = "agradecimiento" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+
+{% block cuerpo %}
+	<section id="interior">
+		<form action="agradecimiento.html">
+			<article class="slider-txt">
+			 
+				<h2 class="title1 head-tit">Gracias por participar y compartir</h2>
+				<h3 class="title4">con todas nosotras tu historia</h3>
+				<h3 class="title5"> INVITA A TUS AMIGAS A SER PARTE DE ESTA DIVERTIDA EXPERIENCIA</h3>
+				 
+				 <div class="boton" align="center"><a href="agradecimiento.html" class="btn1"><span>COMPARTE</span></a></div>
+				 
+			</article>
+		</form>
+	</section>
+{% endblock %}
+
+{% block js %}
+	<script src="js/{{ seccion }}.js"></script>
+{% endblock %}

@@ -1,0 +1,90 @@
+@require "base/utiles"
+@require "nib"
+
+#interior
+	.colm-01
+		display flex
+		justify-content space-between
+		align-items center
+		+hasta( escritorio )
+			flex-direction column-reverse
+	.lista1 
+		padding 20px 0
+		li
+			background url('../img/icons/li-1.png') no-repeat
+			padding 0 0 0 35px
+			font-size (20 / 16)rem
+			margin-bottom 23px
+	
+	.compartir
+		 text-align right
+		 margin-top 1rem
+		 
+		p
+			font-size (12.54 / 16)rem
+			img
+				vertical-align middle
+	.line-time
+		+hasta( escritorio)
+			 margin-left -10px
+			 margin-right -10px
+		li
+			margin-bottom 10px
+			display flex
+			justify-content flex-start
+			+hasta( escritorio )
+				display block
+				border-left #999 1px solid
+				margin-bottom 0
+			&:hover
+				span
+					color red1
+			.date
+				color #3a3a3a
+				font-size (21.93 / 16)rem
+				font-weight normal
+				padding 0 25px
+				+hasta( escritorio )
+					padding 0
+					
+				
+				&::after
+					content ''
+					display block
+					margin 0 auto
+					height 60%
+					width 1px
+					background #7d7d7d
+				span
+					padding 5px 0 10px 0
+					display block
+					&:before
+						+hasta( escritorio )
+							content '—'
+					
+			.detail
+				display flex
+				justify-content flex-start
+				padding 25px 0 0 40px
+				+hasta( escritorio )
+					padding-top 0
+					padding-left 15px
+				img
+					border-radius 7px
+				.texto
+					margin-left 30px
+					+hasta( escritorio )
+						margin-left 10px
+					p
+						margin-bottom 8px
+						+hasta( escritorio )
+							font-size 0.9rem
+					.icopdf
+						background url('../img/icons/li-1.png')  0 4px no-repeat, url('../img/icons/ico-pdf.png') right center no-repeat
+						padding 5px 35px 5px 23px
+						color azul
+						
+						font-weight normal
+						font-size (18 / 16)rem
+						+hasta( escritorio )
+							font-size 1rem
